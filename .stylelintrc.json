@@ -1,15 +1,10 @@
 {
-  "extends": "stylelint-config-standard",
   "rules": {
-    "indentation": 2,
-    "string-quotes": "single",
-    "color-no-invalid-hex": true,
-    "declaration-colon-space-after": "always",
-    "declaration-colon-space-before": "never",
-    "block-no-empty": true,
-    "selector-pseudo-element-colon-notation": "single",
-    "max-empty-lines": 1,
-    "no-eol-whitespace": true,
-    "no-missing-end-of-source-newline": true
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": ["consecutive-duplicates"]
+      }
+    ]
   }
 }

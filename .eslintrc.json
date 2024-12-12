@@ -17,7 +17,7 @@
   },
   "overrides": [
     {
-      "files": ["src/scripts/*.js"],
+      "files": ["/js/*.js"],
       "rules": {
         "no-undef": "error"
       }
