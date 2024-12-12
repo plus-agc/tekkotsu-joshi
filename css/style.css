@@ -1,0 +1,116 @@
+body {
+  background-image: url("../img/bg.gif");
+  background-repeat: repeat;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  color: #fff;
+}
+
+main {
+  max-width: 45vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding-bottom: 140px;
+  position: fixed;
+  top: 0;
+  width: calc((100vw - 45vw) / 2);
+  z-index: 1;
+  background-color: rgb(247 247 238 / 90%);
+  gap: 40px;
+  text-align: center;
+}
+
+.left-inner {
+  position: relative;
+  z-index: 2;
+
+  & p {
+    margin-bottom: 16px;
+  }
+  & img {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+  & img:nth-of-type(2) {
+    width: 250px;
+  }
+}
+
+.left-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  & img {
+    width: 100%;
+  }
+}
+
+.right {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding-bottom: 140px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: calc((100vw - 45vw) / 2);
+  z-index: 1;
+  background-color: rgba(244 50 154 / 90%);
+}
+
+/* slide */
+/* スライダーが親要素の幅いっぱいに広がるように調整 */
+.slider {
+  position: relative;
+  width: 80%; /* 親要素の幅いっぱいに広がる */
+  height: 80%; /* 親要素の高さいっぱいに広がる */
+  overflow: hidden;
+}
+
+/* 各スライドがスライダーの幅と高さにフィットする */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 親の幅に合わせる */
+  height: 100%; /* 親の高さに合わせる */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* 画像が親要素に合わせて広がるように設定 */
+.slide img {
+  width: 100%; /* 親要素の幅いっぱいに表示 */
+  height: 100%; /* 親要素の高さいっぱいに表示 */
+  object-fit: cover; /* 画像が歪まないように調整 */
+}
+
+/* アクティブスライドのスタイル */
+.slide.active {
+  opacity: 1;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon-instagram,
+.icon-tiktok {
+  width: 7.6%;
+}

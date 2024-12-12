@@ -1,0 +1,10 @@
+{
+  "extends": "markuplint:recommended",
+  "rules": {
+    "attr-duplication": "error",
+    "attr-no-unsafe": "error",
+    "doctype-html": "error",
+    "html-valid": "error",
+    "tag-self-close": "warn"
+  }
+}
