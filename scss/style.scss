@@ -588,6 +588,31 @@ cta
   box-sizing: border-box;
   gap: 40px;
 
+  .flex {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+    img:nth-of-type(1) {
+      align-self: flex-start;
+      transform: rotate(-10deg);
+      @media (max-width: 832px) {
+        display: none;
+      }
+    }
+    img:nth-of-type(2) {
+      align-self: flex-end;
+      transform: rotate(10deg);
+      @media (max-width: 832px) {
+        display: none;
+      }
+    }
+  }
+
   p {
     width: calc(100% - 240px);
     font-size: 1.6rem;

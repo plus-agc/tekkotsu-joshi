@@ -10,8 +10,10 @@
     "browser-sync": "browser-sync start --config bs-config.js",
     "convert:images": "node convert-images.js",
     "replace:images": "node replace-images.js",
+    "add:lazy-loading": "node add-lazy-loading.js",
     "build:images": "npm run convert:images && npm run replace:images",
-    "dev": "npm-run-all --parallel sass:watch browser-sync build:images"
+    "build": "npm run build:images && npm run add:lazy-loading",
+    "dev": "npm-run-all --parallel sass:watch browser-sync build"
   },
   "keywords": [],
   "author": "",

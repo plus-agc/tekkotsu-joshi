@@ -591,6 +591,34 @@ cta
     width: 100%;
   }
 }
+.cta-header .flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.cta-header .flex img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.cta-header .flex img:nth-of-type(1) {
+  align-self: flex-start;
+  transform: rotate(-10deg);
+}
+@media (max-width: 832px) {
+  .cta-header .flex img:nth-of-type(1) {
+    display: none;
+  }
+}
+.cta-header .flex img:nth-of-type(2) {
+  align-self: flex-end;
+  transform: rotate(10deg);
+}
+@media (max-width: 832px) {
+  .cta-header .flex img:nth-of-type(2) {
+    display: none;
+  }
+}
 .cta-header p {
   width: calc(100% - 240px);
   font-size: 1.6rem;
