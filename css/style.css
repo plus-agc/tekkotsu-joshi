@@ -611,7 +611,7 @@ cta
   justify-content: space-between;
 }
 .cta-header p {
-  width: 100%;
+  width: calc(100% - 240px);
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 auto;
@@ -665,7 +665,7 @@ cta
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.cta-main input[type="submit"] {
+.cta-main input[type=submit] {
   background-color: transparent;
   color: #812663;
   padding: 10px 25px;
@@ -674,12 +674,12 @@ cta
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
 }
-.cta-main input[type="submit"]:hover {
+.cta-main input[type=submit]:hover {
   background-color: #ba378f;
   color: #fff;
   transform: scale(0.9); /* ホバー時に少し大きくする */
 }
-.cta-main input[type="submit"]:active {
+.cta-main input[type=submit]:active {
   transform: scale(0.85); /* クリック時に少し小さくする */
 }
 
