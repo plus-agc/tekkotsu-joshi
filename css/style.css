@@ -512,7 +512,7 @@ main-body
   }
 }
 .main-body .main-body_footer {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 832px) {
@@ -611,7 +611,7 @@ cta
   justify-content: space-between;
 }
 .cta-header p {
-  width: calc(100% - 240px);
+  width: 100%;
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 auto;

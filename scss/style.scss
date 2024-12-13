@@ -512,7 +512,7 @@ main-body_main
 main-body_footer
 =========================================================== */
   .main-body_footer {
-    width: 80%;
+    width: 100%;
     @media (max-width: 832px) {
       width: 100%;
     }
@@ -628,7 +628,7 @@ cta
   }
 
   p {
-    width: calc(100% - 240px);
+    width: 100%;
     font-size: 1.6rem;
     line-height: 1.8;
     margin: 0 auto;
