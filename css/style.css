@@ -74,7 +74,7 @@ main
 }
 @media (min-width: 833px) {
   main {
-    max-width: 44.4vw;
+    max-width: 45vw;
     height: 100%;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.9);
@@ -323,12 +323,25 @@ main-body
 }
 .main-body .main-body_header .main-body_header-Image {
   display: flex;
+  justify-content: space-between;
   gap: 20px;
+}
+.main-body .main-body_header .main-body_header-Image div:nth-of-type(1) {
+  flex: auto;
+}
+.main-body .main-body_header .main-body_header-Image div:nth-of-type(2) {
+  flex: 6;
+}
+.main-body .main-body_header .main-body_header-Image div:nth-of-type(2) img {
+  width: 100%;
+}
+.main-body .main-body_header .main-body_header-Image div:nth-of-type(3) {
+  flex: auto;
 }
 .main-body .main-body_header h2 {
   font-family: "Montserrat", serif;
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 7rem;
 }
 @media (max-width: 832px) {
   .main-body .main-body_header h2 {
@@ -336,7 +349,7 @@ main-body
   }
 }
 .main-body .main-body_header .main-body_text {
-  width: calc(100% - 240px);
+  width: 100%;
   margin: 0 auto;
   font-size: 1.6rem;
   line-height: 1.8;
@@ -383,6 +396,7 @@ main-body
 .main-body .main-body_main .flex {
   display: flex;
   text-align: left;
+  flex-wrap: wrap;
   gap: 30px;
 }
 @media (max-width: 832px) {
@@ -579,7 +593,7 @@ cta
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 40px;
   text-align: center;
@@ -596,31 +610,8 @@ cta
   gap: 20px;
   justify-content: space-between;
 }
-.cta-header .flex img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
-.cta-header .flex img:nth-of-type(1) {
-  align-self: flex-start;
-  transform: rotate(-10deg);
-}
-@media (max-width: 832px) {
-  .cta-header .flex img:nth-of-type(1) {
-    display: none;
-  }
-}
-.cta-header .flex img:nth-of-type(2) {
-  align-self: flex-end;
-  transform: rotate(10deg);
-}
-@media (max-width: 832px) {
-  .cta-header .flex img:nth-of-type(2) {
-    display: none;
-  }
-}
 .cta-header p {
-  width: calc(100% - 240px);
+  width: 100%;
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 auto;
@@ -647,7 +638,7 @@ cta
   gap: 40px;
 }
 .cta-main .form {
-  width: calc(100% - 240px);
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -674,7 +665,7 @@ cta
   margin-top: 10px;
   margin-bottom: 30px;
 }
-.cta-main input[type=submit] {
+.cta-main input[type="submit"] {
   background-color: transparent;
   color: #812663;
   padding: 10px 25px;
@@ -683,12 +674,12 @@ cta
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
 }
-.cta-main input[type=submit]:hover {
+.cta-main input[type="submit"]:hover {
   background-color: #ba378f;
   color: #fff;
   transform: scale(0.9); /* ホバー時に少し大きくする */
 }
-.cta-main input[type=submit]:active {
+.cta-main input[type="submit"]:active {
   transform: scale(0.85); /* クリック時に少し小さくする */
 }
 
