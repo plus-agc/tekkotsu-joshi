@@ -23,8 +23,8 @@
     />
     <meta name="twitter:image" content="ogp.jpg" />
     <!-- CSSファイル -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,7 +47,7 @@
         </div>
         <div class="main-image">
           <img
-            src="/img/hero.jpg"
+            src="./img/hero.jpg"
             alt="ヒーロー画像"
             width="1920"
             height="1080"
@@ -56,39 +56,41 @@
       </section>
       <section class="main-body">
         <div class="main-body_header">
-          <img
-            src="/img/faceguard.png"
-            alt="フェイスガード"
-            width="203"
-            height="116"
-          />
-          <img
-            src="/img/main-logo.svg"
-            alt="メインロゴ"
-            width="454"
-            height="207"
-          />
-          <img
-            src="/img/helmet.png"
-            alt="ヘルメット"
-            width="172"
-            height="175"
-          />
+          <div class="main-body_header-Image">
+            <img
+              src="./img/faceguard.png"
+              alt="フェイスガード"
+              width="203"
+              height="116"
+            />
+            <img
+              src="./img/main-logo.svg"
+              alt="メインロゴ"
+              width="454"
+              height="207"
+            />
+            <img
+              src="./img/helmet.png"
+              alt="ヘルメット"
+              width="172"
+              height="175"
+            />
+          </div>
+          <h2>
+            Tekkotsu<br />
+            Joshi<br />
+            Project<br />
+            Start!
+          </h2>
+          <p class="main-body_text">
+            まるよし工業「鐵骨女子」プロジェクトは、当社の女性社員による新たな挑戦です。SNSを通じて、私たちの魅力をより多くの方々にお伝えすることを目指しています。個性豊かなメンバーが、自分たちの言葉で会社の魅力や働く楽しさを発信します。新しい視点とエネルギーで、私たちの取り組みや価値観をより一層引き出し、皆さまに届けていきますので、どうぞご期待ください！
+          </p>
         </div>
-        <h2>
-          Tekkotsu<br />
-          Joshi<br />
-          Project<br />
-          Start!
-        </h2>
-        <p class="main-body_text">
-          まるよし工業「鉄骨女子」プロジェクトは、当社の女性社員による新たな挑戦です。SNSを通じて、私たちの魅力をより多くの方々にお伝えすることを目指しています。個性豊かなメンバーが、自分たちの言葉で会社の魅力や働く楽しさを発信します。新しい視点とエネルギーで、私たちの取り組みや価値観をより一層引き出し、皆さまに届けていきますので、どうぞご期待ください！
-        </p>
         <div class="main-body_main">
           <div class="flex">
             <div>
               <img
-                src="/img/miura.png"
+                src="./img/miura.png"
                 alt="三浦さん"
                 width="200"
                 height="200"
@@ -97,7 +99,7 @@
             <div class="miura">
               <div class="cow-container">
                 <img
-                  src="/img/cow.png"
+                  src="./img/cow.png"
                   alt="牛"
                   width="184"
                   height="247"
@@ -106,7 +108,7 @@
               </div>
               <h3>三浦さん（♀）</h3>
               <p>
-                鉄骨女子のメインメンバー！<br />
+                鐵骨女子のメインメンバー！<br />
                 前職は牧場で牛のお世話をしていたという、
                 異色の経歴をもつ体当たり女子！
               </p>
@@ -116,7 +118,7 @@
             <div class="shacho">
               <div class="hammer-container">
                 <img
-                  src="/img/hammer.png"
+                  src="./img/hammer.png"
                   alt="ハンマー"
                   width="102"
                   height="65"
@@ -125,18 +127,18 @@
               </div>
               <h3>社長さん（♂）</h3>
               <p>
-                鉄骨女子を応援する代表取締役！<br />
+                鐵骨女子を応援する代表取締役！<br />
                 ワイン歴がかなり長いが最近はカルバドスにはまっているらしい。仕事には厳しいが自由な社風を大事にしたいと日々奮闘している！
               </p>
             </div>
             <div>
-              <img src="/img/shacho.png" alt="社長" width="200" height="200" />
+              <img src="./img/shacho.png" alt="社長" width="200" height="200" />
             </div>
           </div>
         </div>
         <div class="main-body_footer">
           <h3 class="headline-03 bg-yellow">
-            鉄骨女子の活動はこちらから！！！
+            鐵骨女子の活動はこちらから！！！
           </h3>
           <div class="flex">
             <a
@@ -145,7 +147,12 @@
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <svg viewBox="0 0 448 512" width="100" height="100">
+              <svg
+                viewBox="0 0 448 512"
+                width="100"
+                height="100"
+                class="instagram-icon"
+              >
                 <path
                   fill="#CF2E92"
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
@@ -158,7 +165,12 @@
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <svg viewBox="0 0 512 512" width="100" height="100">
+              <svg
+                viewBox="0 0 512 512"
+                width="100"
+                height="100"
+                class="facebook-icon"
+              >
                 <path
                   fill="#1877F2"
                   d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256z"
@@ -171,7 +183,12 @@
               rel="noopener noreferrer"
               aria-label="Tiktok"
             >
-              <svg viewBox="0 0 448 512" width="100" height="100">
+              <svg
+                viewBox="0 0 448 512"
+                width="100"
+                height="100"
+                class="tiktok-icon"
+              >
                 <path
                   fill="#000000"
                   d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
@@ -186,7 +203,7 @@
           <div class="carousel">
             <div class="carousel-item">
               <img
-                src="/img/footer-slide01.jpg"
+                src="./img/footer-slide01.jpg"
                 alt="Image 1"
                 width=""
                 height=""
@@ -194,7 +211,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide02.jpg"
+                src="./img/footer-slide02.jpg"
                 alt="Image 2"
                 width=""
                 height=""
@@ -202,7 +219,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide03.jpg"
+                src="./img/footer-slide03.jpg"
                 alt="Image 3"
                 width=""
                 height=""
@@ -210,7 +227,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide04.jpg"
+                src="./img/footer-slide04.jpg"
                 alt="Image 4"
                 width=""
                 height=""
@@ -218,7 +235,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide05.jpg"
+                src="./img/footer-slide05.jpg"
                 alt="Image 5"
                 width=""
                 height=""
@@ -226,7 +243,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide06.jpg"
+                src="./img/footer-slide06.jpg"
                 alt="Image 6"
                 width=""
                 height=""
@@ -234,7 +251,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide07.jpg"
+                src="./img/footer-slide07.jpg"
                 alt="Image 7"
                 width=""
                 height=""
@@ -242,7 +259,7 @@
             </div>
             <div class="carousel-item">
               <img
-                src="/img/footer-slide08.jpg"
+                src="./img/footer-slide08.jpg"
                 alt="Image 8"
                 width=""
                 height=""
@@ -251,22 +268,63 @@
           </div>
         </div>
       </section>
+      <section class="cta">
+        <div class="cta-header">
+          <h3 class="headline-03 bg-yellow">続け！鐵骨女子！！！</h3>
+          <p>
+            「鐵骨女子」プロジェクトでは、私たちと一緒に新しい風を吹き込んでくれる仲間を募集中です！女性の方でもモノづくりに興味のある方、手に職をつけて仕事にやりがいを持ちたいと考えている方、ぜひ私たちと一緒に会社を盛り上げていきませんか？
+            まずはエントリーしてみて！
+          </p>
+        </div>
+        <div class="cta-main">
+          <div class="form">
+            <form method="post" action="./mail.php">
+              <label for="name">名前</label>
+              <input type="text" id="name" name="お名前" required /><br />
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="Email" required /><br />
+              <label for="message">お問い合せ内容</label>
+              <textarea
+                id="message"
+                name="お問い合せ内容"
+                rows="10"
+                required
+              ></textarea
+              ><br />
+              <input type="submit" value="送信" class="" />
+            </form>
+          </div>
+        </div>
+        <div class="marquee-container bottom">
+          <div class="marquee reverse" id="marquee-bottom">
+            <span>tekkotsu joshi&nbsp;</span>
+          </div>
+        </div>
+      </section>
     </main>
     <div class="left">
       <div class="left-inner">
-        <img src="/img/logo.svg" alt="鐵骨女子ロゴ" width="" height="" />
+        <img src="./img/logo.svg" alt="鐵骨女子ロゴ" width="" height="" />
         <div class="social">
           <a class="icon-instagram" href="#" target="_blank">
             <img
-              src="/img/instagram-brands-solid.svg"
+              src="./img/instagram-brands-solid.svg"
               alt="Instagramアイコン"
+              width=""
+              height=""
+            />
+          </a>
+          <a class="icon-facebook" href="#" target="_blank">
+            <img
+              src="./img/facebook-brands-solid.svg"
+              alt="facebookアイコン"
               width=""
               height=""
             />
           </a>
           <a class="icon-tiktok" href="#" target="_blank">
             <img
-              src="/img/tiktok-brands-solid.svg"
+              src="./img/tiktok-brands-solid.svg"
               alt="Tiktokアイコン"
               width=""
               height=""
@@ -276,7 +334,7 @@
       </div>
       <div class="left-bg">
         <img
-          src="/img/maruyoshi-logo.svg"
+          src="./img/maruyoshi-logo.svg"
           alt="まるよし工業ロゴ"
           width=""
           height=""
@@ -286,22 +344,22 @@
     <div class="right">
       <div class="slider">
         <div class="slide fade">
-          <img src="/img/slide01.jpg" alt="Slide 1" width="" height="" />
+          <img src="./img/slide01.jpg" alt="Slide 1" width="" height="" />
         </div>
         <div class="slide fade">
-          <img src="/img/slide03.jpg" alt="Slide 3" width="" height="" />
+          <img src="./img/slide03.jpg" alt="Slide 3" width="" height="" />
         </div>
         <div class="slide fade">
-          <img src="/img/slide04.jpg" alt="Slide 3" width="" height="" />
+          <img src="./img/slide04.jpg" alt="Slide 3" width="" height="" />
         </div>
         <div class="slide fade">
-          <img src="/img/slide05.jpg" alt="Slide 3" width="" height="" />
+          <img src="./img/slide05.jpg" alt="Slide 3" width="" height="" />
         </div>
         <div class="slide fade">
-          <img src="/img/slide06.jpg" alt="Slide 3" width="" height="" />
+          <img src="./img/slide06.jpg" alt="Slide 3" width="" height="" />
         </div>
       </div>
     </div>
-    <script src="/js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

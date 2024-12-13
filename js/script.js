@@ -1,5 +1,5 @@
 /* ===========================================================
-スライダー
+slider
 =========================================================== */
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
@@ -17,7 +17,7 @@ function showNextSlide() {
 setInterval(showNextSlide, 3000);
 
 /* ===========================================================
-marquee
+marquee top
 =========================================================== */
 document.addEventListener("DOMContentLoaded", () => {
   // marquee内のspan要素に適用
@@ -42,6 +42,21 @@ document.addEventListener("DOMContentLoaded", () => {
       h3.parentElement.appendChild(newH3);
     }
   });
+});
+
+/* ===========================================================
+marquee bottom
+=========================================================== */
+document.addEventListener("DOMContentLoaded", () => {
+  // 下部のmarquee内のspan要素に適用
+  const marqueeBottom = document.getElementById("marquee-bottom");
+  const marqueeBottomText = marqueeBottom.querySelector("span").innerText;
+
+  for (let i = 0; i < 20; i++) {
+    const span = document.createElement("span");
+    span.innerText = marqueeBottomText;
+    marqueeBottom.appendChild(span);
+  }
 });
 
 /* ===========================================================
