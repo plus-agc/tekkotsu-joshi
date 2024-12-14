@@ -117,3 +117,29 @@ images.forEach((img) => {
 const carousel = document.querySelector(".carousel");
 const firstItem = carousel.children[0].cloneNode(true);
 carousel.appendChild(firstItem);
+
+/* ===========================================================
+チカチカ文字
+=========================================================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const h2 = document.querySelector("h2");
+  const lines = h2.innerHTML.split("<br>"); // <br>で行ごとに分割
+  h2.innerHTML = ""; // 元の内容をクリア
+
+  lines.forEach((line, lineIndex) => {
+    line.split("").forEach((char) => {
+      if (char === " ") {
+        h2.appendChild(document.createTextNode(" "));
+      } else {
+        const charSpan = document.createElement("span");
+        charSpan.innerText = char;
+        charSpan.style.animationDelay = `${Math.random() * 1}s`; // ランダムな遅延を設定
+        h2.appendChild(charSpan);
+      }
+    });
+    if (lineIndex < lines.length - 1) {
+      const br = document.createElement("br");
+      h2.appendChild(br);
+    }
+  });
+});

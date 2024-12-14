@@ -338,15 +338,20 @@ main-body
 .main-body .main-body_header .main-body_header-Image div:nth-of-type(3) {
   flex: auto;
 }
-.main-body .main-body_header h2 {
-  font-family: "Montserrat", serif;
-  font-weight: 900;
-  font-size: 7rem;
+.main-body .main-body_header h2 br {
+  display: none;
 }
-@media (max-width: 832px) {
-  .main-body .main-body_header h2 {
-    font-size: 4rem;
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
   }
+  20%, 50%, 80% {
+    opacity: 0.4;
+  }
+}
+.main-body .main-body_header h2 span {
+  display: inline-block;
+  animation: flicker 1s infinite; /* 点滅速度を遅く */
 }
 .main-body .main-body_header .main-body_text {
   width: 100%;
