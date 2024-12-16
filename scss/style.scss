@@ -74,7 +74,7 @@ main
 
 @media (min-width: 833px) {
   main {
-    max-width: 45vw;
+    max-width: 30vw;
     height: 100%;
     margin: 0 auto;
     background-color: rgba(255 255 255 / 90%);
@@ -131,7 +131,7 @@ left, right
     padding-bottom: 140px;
     position: fixed;
     top: 0;
-    width: calc((100vw - 45vw) / 2);
+    width: calc((100vw - 30vw) / 2);
     z-index: 1;
     background-color: rgb(247 247 238 / 90%);
     gap: 40px;
@@ -162,14 +162,14 @@ left, right
     img {
       position: absolute;
       bottom: -100px;
-      right: 10%;
+      right: 250px;
       width: 250px;
     }
   }
 
   .left-bg:before {
     content: "";
-    width: 54.7rem;
+    width: 100%;
     height: 46.5rem;
     background-image: url(../img/left-bg.svg);
     background-size: cover;
@@ -188,7 +188,7 @@ left, right
     position: fixed;
     right: 0;
     top: 0;
-    width: calc((100vw - 45vw) / 2);
+    width: calc((100vw - 30vw) / 2);
     z-index: 1;
     background-color: rgba(244 50 154 / 90%);
   }
@@ -345,7 +345,7 @@ main-body_header
       }
     }
     h2 {
-      font-size: 8vw;
+      font-size: 5vw;
       @media (max-width: 832px) {
         font-size: 16vw;
       }
@@ -398,11 +398,8 @@ main-body_main
     .flex {
       display: flex;
       text-align: left;
-      flex-direction: row;
+      flex-direction: column;
       gap: 30px;
-      @media (max-width: 832px) {
-        flex-direction: column;
-      }
       img {
         width: 100%;
         height: 100%;
@@ -418,6 +415,7 @@ main-body_main
       justify-content: center;
       font-size: 1.6rem;
       width: 100%;
+      text-align: center;
       .cow-container {
         display: flex;
         gap: 10px;
@@ -431,7 +429,6 @@ main-body_main
         }
         font-weight: 900;
         margin-bottom: 20px;
-        align-self: flex-start;
       }
       .cow {
         width: 100px;
@@ -451,10 +448,10 @@ main-body_main
       justify-content: center;
       font-size: 1.6rem;
       width: 100%;
+      text-align: center;
       .hammer-container {
         display: flex;
         gap: 5px;
-        align-items: flex-start;
         height: auto;
       }
       h3 {
@@ -464,7 +461,6 @@ main-body_main
         }
         font-weight: 900;
         margin-bottom: 20px;
-        align-self: flex-start;
       }
       p {
         line-height: 1.8;

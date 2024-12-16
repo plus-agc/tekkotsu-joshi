@@ -74,7 +74,7 @@ main
 }
 @media (min-width: 833px) {
   main {
-    max-width: 45vw;
+    max-width: 30vw;
     height: 100%;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.9);
@@ -127,7 +127,7 @@ left, right
     padding-bottom: 140px;
     position: fixed;
     top: 0;
-    width: 27.5vw;
+    width: 35vw;
     z-index: 1;
     background-color: rgba(247, 247, 238, 0.9);
     gap: 40px;
@@ -156,12 +156,12 @@ left, right
   .left-bg img {
     position: absolute;
     bottom: -100px;
-    right: 10%;
+    right: 250px;
     width: 250px;
   }
   .left-bg:before {
     content: "";
-    width: 54.7rem;
+    width: 100%;
     height: 46.5rem;
     background-image: url(../img/left-bg.svg);
     background-size: cover;
@@ -179,7 +179,7 @@ left, right
     position: fixed;
     right: 0;
     top: 0;
-    width: 27.5vw;
+    width: 35vw;
     z-index: 1;
     background-color: rgba(244, 50, 154, 0.9);
   }
@@ -340,7 +340,7 @@ main-body
   flex: auto;
 }
 .main-body .main-body_header h2 {
-  font-size: 8vw;
+  font-size: 5vw;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
 }
@@ -397,13 +397,8 @@ main-body
 .main-body .main-body_main .flex {
   display: flex;
   text-align: left;
-  flex-direction: row;
+  flex-direction: column;
   gap: 30px;
-}
-@media (max-width: 832px) {
-  .main-body .main-body_main .flex {
-    flex-direction: column;
-  }
 }
 .main-body .main-body_main .flex img {
   width: 100%;
@@ -418,6 +413,7 @@ main-body
   justify-content: center;
   font-size: 1.6rem;
   width: 100%;
+  text-align: center;
 }
 .main-body .main-body_main .miura .cow-container {
   display: flex;
@@ -429,7 +425,6 @@ main-body
   font-size: 3.6rem;
   font-weight: 900;
   margin-bottom: 20px;
-  align-self: flex-start;
 }
 @media (max-width: 832px) {
   .main-body .main-body_main .miura h3 {
@@ -453,18 +448,17 @@ main-body
   justify-content: center;
   font-size: 1.6rem;
   width: 100%;
+  text-align: center;
 }
 .main-body .main-body_main .shacho .hammer-container {
   display: flex;
   gap: 5px;
-  align-items: flex-start;
   height: auto;
 }
 .main-body .main-body_main .shacho h3 {
   font-size: 3.6rem;
   font-weight: 900;
   margin-bottom: 20px;
-  align-self: flex-start;
 }
 @media (max-width: 832px) {
   .main-body .main-body_main .shacho h3 {
