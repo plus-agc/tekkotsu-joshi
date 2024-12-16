@@ -390,8 +390,19 @@ if (($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &
 	送信は正常に完了しました。<br /><br />
 	<a href="<?php echo $site_top; ?>">トップページへ戻る&raquo;</a>
 	</div>
-	<?php copyright(); ?>
 	<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMV8SBDC21"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-ZMV8SBDC21');
+	</script>
 	</body>
 
 	</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maruyoshi-ironworks.com/tekkotsu-joshi/sitemap.xml
