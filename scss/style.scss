@@ -326,6 +326,7 @@ main-body_header
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    font-size: 2.75vw;
     .main-body_header-Image {
       display: flex;
       justify-content: space-between;
@@ -343,25 +344,13 @@ main-body_header
         flex: auto;
       }
     }
-    h2 br {
-      display: none;
-    }
-
-    @keyframes flicker {
-      0%,
-      100% {
-        opacity: 1;
+    h2 {
+      font-size: 27.5vw;
+      @media (max-width: 832px) {
+        font-size: 16vw;
       }
-      20%,
-      50%,
-      80% {
-        opacity: 0.4;
-      }
-    }
-
-    h2 span {
-      display: inline-block;
-      animation: flicker 1s infinite; /* 点滅速度を遅く */
+      font-weight: 900;
+      font-family: "Montserrat", sans-serif;
     }
     .main-body_text {
       width: 100%;
