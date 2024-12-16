@@ -397,6 +397,7 @@ main-body
 .main-body .main-body_main .flex {
   display: flex;
   text-align: left;
+  flex-direction: row;
   gap: 30px;
 }
 @media (max-width: 832px) {
@@ -416,6 +417,7 @@ main-body
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+  width: 100%;
 }
 .main-body .main-body_main .miura .cow-container {
   display: flex;
@@ -450,6 +452,7 @@ main-body
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+  width: 100%;
 }
 .main-body .main-body_main .shacho .hammer-container {
   display: flex;
