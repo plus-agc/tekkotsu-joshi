@@ -191,7 +191,7 @@ left, right
 }
 
 .icon-instagram,
-.icon-facebook,
+.icon-x,
 .icon-tiktok {
   width: 7.6%;
 }
@@ -537,7 +537,7 @@ main-body
   color: #f26939;
 }
 .main-body .main-body_footer .instagram-icon,
-.main-body .main-body_footer .facebook-icon,
+.main-body .main-body_footer .x-icon,
 .main-body .main-body_footer .tiktok-icon {
   width: 60px;
   height: auto;
