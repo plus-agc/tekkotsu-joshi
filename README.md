@@ -1,40 +1,50 @@
 # tekkotsu-joshi
 
-このプロジェクトは、鐵骨女子 | 有限会社まるよし工業のウェブサイトです。以下のファイルが含まれています。
+このプロジェクトは、鐵骨女子 | 有限会社まるよし工業のウェブサイトです。
 
-## ファイル構成
+## プロジェクト構成
 
-- index.html**: ウェブページのエントリーポイントで、HTML構造を定義し、メタ情報やスタイルシートをリンクしています。
-- style.css**: ウェブページのスタイルを定義するCSSファイルです。
-- script.js**: ウェブページの動的な機能を提供するJavaScriptコードを含みます。
+### メインファイル
+- `index.html`: ウェブサイトのメインページ
+- `scss/style.scss`: SCSSで記述されたスタイル定義
+- `css/`: コンパイル済みのCSSファイル
+- `js/`: JavaScriptファイル
+- `img/`: 画像ファイル
 
-## 設定ファイル
+### 設定ファイル
+- `.stylelintrc.json`: Stylelintの設定（SCSSのコード品質管理）
+- `.markuplintrc`: Markuplintの設定（HTMLの構文チェック）
+- `.eslintrc.json`: ESLintの設定（JavaScriptのコード品質管理）
+- `package.json`: プロジェクトの依存関係と設定
+- `bs-config.js`: Browser-Syncの設定
 
-- **.stylelintrc.json**: stylelintの設定ファイルで、CSSのスタイルガイドラインを定義します。
-- **.markuplintrc**: markuplintの設定ファイルで、HTMLの構文エラーやスタイルをチェックするためのルールを定義します。
-- **.eslintrc.json**: ESLintの設定ファイルで、JavaScriptコードの品質を保つためのルールを定義します。
-- **package.json**: npmの設定ファイルで、プロジェクトの依存関係やスクリプトを定義します。
+### ユーティリティスクリプト
+- `add-lazy-loading.js`: 画像の遅延読み込み設定
+- `convert-images.js`: 画像変換ユーティリティ
+- `replace-images.js`: 画像置換ユーティリティ
 
-## インストール手順
+### その他
+- `mail.php`: お問い合わせフォーム処理
+- `robots.txt`: クローラー設定
+- `sitemap.xml`: サイトマップ
+- `favicon.ico`: ファビコン
+- `ogp.jpg`: OGP画像
 
-1. リポジトリをクローンします。
-   ```
-   git clone <repository-url>
-   ```
-2. プロジェクトディレクトリに移動します。
-   ```
-   cd my-web-project
-   ```
-3. 依存関係をインストールします。
-   ```
-   npm install
-   ```
+## 開発環境のセットアップ
 
-## 使用方法
+```bash
+# 依存パッケージのインストール
+npm install
 
-プロジェクトをローカルサーバーで実行するには、以下のコマンドを使用します。
-```
+# 開発サーバーの起動
 npm start
 ```
 
-ブラウザで `http://localhost:3000` にアクセスして、ウェブサイトを確認できます。
+## リンター・フォーマッター
+
+コードの品質を維持するため、以下のリンターを使用しています：
+- Stylelint: SCSSのコード品質チェック
+- Markuplint: HTMLの構文チェック
+- ESLint: JavaScriptのコード品質チェック
+
+各リンターは対応する設定ファイルで管理されています。

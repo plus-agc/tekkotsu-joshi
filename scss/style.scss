@@ -11,6 +11,56 @@ body {
 
 a {
   color: #fff;
+  text-decoration: none;
+
+  &.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icon {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.social-img {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.submit {
+  background-color: #e53793;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(#e53793, 10%);
+  }
 }
 
 .headline-03 {
@@ -607,25 +657,6 @@ cta
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    // img {
-    //   width: 150px;
-    //   height: 150px;
-    //   object-fit: contain;
-    // }
-    // img:nth-of-type(1) {
-    //   align-self: flex-start;
-    //   transform: rotate(-10deg);
-    //   @media (max-width: 832px) {
-    //     display: none;
-    //   }
-    // }
-    // img:nth-of-type(2) {
-    //   align-self: flex-end;
-    //   transform: rotate(10deg);
-    //   @media (max-width: 832px) {
-    //     display: none;
-    //   }
-    // }
   }
 
   p {
@@ -683,8 +714,8 @@ cta
   }
 
   input[type="submit"] {
-    background-color: transparent;
-    color: #812663;
+    background-color: #e53793;
+    color: white;
     padding: 10px 25px;
     border-radius: 5px;
     font-size: 2.3rem;
@@ -695,10 +726,10 @@ cta
   input[type="submit"]:hover {
     background-color: #ba378f;
     color: #fff;
-    transform: scale(0.9); /* ホバー時に少し大きくする */
+    transform: scale(0.9);
   }
 
   input[type="submit"]:active {
-    transform: scale(0.85); /* クリック時に少し小さくする */
+    transform: scale(0.85);
   }
 }
