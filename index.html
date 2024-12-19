@@ -5,8 +5,9 @@
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-ZMV8SBDC21"
+      defer
     ></script>
-    <script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -17,9 +18,45 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;"
+    />
+    <meta
+      name="description"
+      content="まるよし工業の女性社員による新たな挑戦『鐵骨女子』プロジェクト。SNSを通じて会社の魅力や働く楽しさを発信しています。"
+    />
+    <meta
+      name="keywords"
+      content="鐵骨女子,まるよし工業,鉄骨,女性活躍,建設業,溶接,モノづくり"
+    />
+    <meta name="theme-color" content="#ffd700" />
     <title>鐵骨女子 | 有限会社まるよし工業</title>
+
+    <!-- リソースの先読み -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="preload" href="js/script.js" as="script" />
+
     <!-- ファビコン -->
     <link rel="icon" href="favicon.ico" />
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- OGカード -->
     <meta
       property="og:title"
@@ -50,33 +87,47 @@
       name="twitter:description"
       content="まるよし工業の女性社員による新たな挑戦『鐵骨女子』プロジェクト。SNSを通じて会社の魅力や働く楽しさを発信しています。"
     />
-    <meta
-      name="twitter:url"
-      content="https://maruyoshi-ironworks.com/tekkotsu-joshi/"
-    />
-    <meta
-      name="twitter:image"
-      content="https://maruyoshi-ironworks.com/tekkotsu-joshi/ogp.webp"
-    />
-    <meta name="twitter:site" content="@MaruyoshiIron" />
 
-    <!-- CSSファイル -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Cookie通知 -->
+    <script defer>
+      window.addEventListener("load", function () {
+        if (!localStorage.getItem("cookieConsent")) {
+          const notice = document.createElement("div");
+          notice.style.position = "fixed";
+          notice.style.bottom = "0";
+          notice.style.width = "100%";
+          notice.style.padding = "1em";
+          notice.style.background = "#f8f9fa";
+          notice.style.textAlign = "center";
+          notice.style.zIndex = "1000";
+          notice.innerHTML =
+            'このサイトではGoogle Analyticsを使用しています。詳しくは<a href="/privacy-policy" style="color: #0066cc;">プライバシーポリシー</a>をご覧ください。<button onclick="acceptCookies()" style="margin-left: 1em; padding: 0.5em 1em; background: #0066cc; color: white; border: none; border-radius: 4px;">同意する</button>';
+          document.body.appendChild(notice);
+        }
+      });
+
+      function acceptCookies() {
+        localStorage.setItem("cookieConsent", "true");
+        document.querySelector('div[style*="position: fixed"]').remove();
+      }
+    </script>
   </head>
   <body>
-    <main>
+    <!-- スキップナビゲーション -->
+    <a
+      href="#main-content"
+      class="skip-link"
+      style="
+        position: absolute;
+        left: -9999px;
+        z-index: 999;
+        padding: 1em;
+        background: white;
+      "
+      >メインコンテンツにスキップ</a
+    >
+
+    <main id="main-content">
       <section class="main-header">
         <div class="marquee-container">
           <div class="marquee" id="marquee">
@@ -134,9 +185,9 @@
             Project<br />
             Start!
           </h2>
-          <p class="main-body_text">
+          <h1 class="main-body_text">
             まるよし工業「鐵骨女子」プロジェクトは、当社の女性社員による新たな挑戦です。SNSを通じて、私たちの魅力をより多くの方々にお伝えすることを目指しています。個性豊かなメンバーが、自分たちの言葉で会社の魅力や働く楽しさを発信します。新しい視点とエネルギーで、私たちの取り組みや価値観をより一層引き出し、皆さまに届けていきますので、どうぞご期待ください！
-          </p>
+          </h1>
         </div>
         <div class="main-body_main">
           <div class="flex">
